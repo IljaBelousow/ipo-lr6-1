@@ -1,10 +1,10 @@
-#Подсчитывает количество строк, содержащих букву г
 spisok = ["Ароматизатор", "Окно", "Море", "Русалка", "Бейбибум", "Годзила"]
-a = 0
-for i in spisok:#i проходит по всем словам списка
-    print(i)
-    if "г" in i:#если i = г
-        a += 1
-    elif "Г" in i:#если i = Г
-        a += 1
-print(a)
+
+count = 0
+
+for word in spisok:
+    print(word) 
+    if "г" in word.lower():
+        count += 1 
+
+print(count)
